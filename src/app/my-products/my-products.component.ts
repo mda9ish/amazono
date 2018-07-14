@@ -25,6 +25,7 @@ export class MyProductsComponent implements OnInit {
         : this.data.error(data['message']);
     } catch (error) {
       this.data.error(error['message']);
+      console.log(error);
     }
   }
 
